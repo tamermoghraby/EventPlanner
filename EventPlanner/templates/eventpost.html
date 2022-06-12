@@ -1,0 +1,25 @@
+{%block body%}
+<div class="container">
+    <h1 class="text-center"> Events </h1> 
+   <div class="row mx-2 my-3" >
+     <div class="col-md-3">
+     <div class="card" >
+       <img src="{{event.thumbnail}}" class="card-img-top img-thumbnail "  alt="...">
+           <div class="card-body h-150">
+         <h4 class="card-title">{{event.title}} </h4>
+         <p class="card-text" style="height:70px"> {{event.description}} </p>
+       </div>
+       <ul class="list-group list-group-flush">
+         <li class="list-group-item">An item</li>
+         
+         <li class="list-group-item">{{event.date}}</li>
+         <li class="list-group-item">
+         <a href="eventpost/{{event.slug}}" class="card-link">Card link</a>
+         <a href="#" class="card-link">Another link</a> </li>
+       </ul>
+       
+     </div>
+     </div>
+     </div>
+     </div>
+{% endblock body %}
